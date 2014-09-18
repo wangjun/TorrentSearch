@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Torrent</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <script type="text/javascript" src="scripts/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="scripts/search.js"></script>
+</head>
+<body>
+  <div align="center" class="jumbotron search-box">
+    <div class="input-group">
+        <div id="search" align="center">
+            <input name="q" type="text" size="40" placeholder="Search moive music and so on" class="form-control"/>
+            <span class="input-group-btn scan-but-span">
+              <button type="button" id="su"  class="btn btn-success">搜索</button> 
+            </span>
+        </div>
+    </div>
+  
+    <div id="loading">
+        Searching...
+    </div>
+    <div id="noResult">
+       <p style="color:red;">Nothing searched.</p>
+    </div>
+    <div id="gridItems">
+    </div>
+    
+    <script id="itemHtml" type="text/html">
+    <div>
+      <br/>
+      <span title="{{text}}">{{text}}</span><a href="{{magnet}}">   磁力链接</a>
+      <br/>
+    </div>
+  </div>
+  </script>
+</body>
+</html>

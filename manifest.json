@@ -1,0 +1,36 @@
+{
+   "manifest_version": 2,
+   "name": "Torrent Search",
+   "version": "1.0.1",
+   "description": "search torrent very easy.",   
+   
+   "permissions": [ 
+     "notifications", 
+     "management", 
+     "contextMenus",
+     "tabs", 
+     "http://*/*", 
+     "https://*/*"  
+     ],
+
+   "icons": {
+      "16": "torrent_search.png",
+      "19": "torrent_search.png",
+      "48": "torrent_search.png",
+      "128": "torrent_search.png"
+   },
+   
+   "background": {
+      "page": "background.html"
+   },
+   
+   "browser_action": {
+      "default_icon": "torrent_search.png"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "./jquery-1.7.2.min.js"],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ]
+}

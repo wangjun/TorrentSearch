@@ -1,0 +1,29 @@
+.form-inline .form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: center;
+        position: relative;
+    }
+    
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c
+}
+
+#gridItems {
+    display: inline-block;
+    margin: 50px auto;
+    text-align: left;
+    position: relative;
+}
+
+#loading {
+    clear: both; 
+    display: none;
+}
+
+#noResult {
+    clear: both; 
+    display: none;
+}
